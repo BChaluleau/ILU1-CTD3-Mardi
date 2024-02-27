@@ -7,16 +7,18 @@ public class Ouvrage {
 	private String editeur;
 	private int annee;
 	private String isbn;
+	private GenreLitteraire genre;
 
 	private Exemplaire[] exemplaires = new Exemplaire[50];
 	private int nbExemplaires = 0;
 
-	public Ouvrage(String titre, String auteurs, String editeur, int annee, String isbn) {
+	public Ouvrage(GenreLitteraire genre, String titre, String auteurs, String editeur, int annee, String isbn) {
 		this.titre = titre;
 		this.auteurs = auteurs;
 		this.editeur = editeur;
 		this.annee = annee;
 		this.isbn = isbn;
+		this.genre = genre;
 	}
 
 	public String getTitre() {
@@ -61,8 +63,8 @@ public class Ouvrage {
 
 	@Override
 	public String toString() {
-		String tos = "Ouvrage [titre=" + titre + ", auteurs=" + auteurs + ", editeur=" + editeur + ", annee=" + annee
-				+ ", isbn=" + isbn + ", nbExemplaires=" + nbExemplaires + "]";
+		String tos = "Ouvrage [genre=" + genre + " titre=" + titre + ", auteurs=" + auteurs + ", editeur=" + editeur
+				+ ", annee=" + annee + ", isbn=" + isbn + ", nbExemplaires=" + nbExemplaires + "]";
 		for (Exemplaire exemplaire : exemplaires) {
 			if (exemplaire != null) {
 				tos = tos + "\t" + exemplaire.getCote();
