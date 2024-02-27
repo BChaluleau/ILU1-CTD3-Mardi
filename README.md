@@ -13,3 +13,6 @@ TD Bibliothèque
 
 ## 3 
 - ajout des get/set
+
+## 4
+- on arrête de mettre à jour les readme

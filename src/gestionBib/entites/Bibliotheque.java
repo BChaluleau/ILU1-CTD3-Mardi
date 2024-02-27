@@ -23,4 +23,14 @@ public class Bibliotheque {
 		return nbOuvrages;
 	}
 
+	public void ajouteOuvrage(Ouvrage ouvrage) {
+		if (nbOuvrages >= nbMaxOuvrages) {
+			System.out.println("Bibli pleine");
+			return;
+		}
+
+		fond[nbOuvrages] = ouvrage;
+		nbOuvrages++;
+	}
+
 }

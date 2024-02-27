@@ -12,7 +12,10 @@ public class Scenario {
 		Ouvrage ouvrage1 = new Ouvrage("Titre", "Auteurs", "Editeur", 2024, "ISBN");
 		Exemplaire exemplaire = new Exemplaire("COTE");
 
-		System.out.println(exemplaire.getCote());
+		bibli.ajouteOuvrage(ouvrage1);
+		ouvrage1.ajouteExemplaire(exemplaire);
+
+		System.out.println(bibli);
 
 		System.out.println("...fin");
 

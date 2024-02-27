@@ -8,7 +8,7 @@ public class Ouvrage {
 	private int annee;
 	private String isbn;
 
-	private Ouvrage[] exemplaires = new Ouvrage[50];
+	private Exemplaire[] exemplaires = new Exemplaire[50];
 	private int nbExemplaires = 0;
 
 	public Ouvrage(String titre, String auteurs, String editeur, int annee, String isbn) {
@@ -39,12 +39,22 @@ public class Ouvrage {
 		return isbn;
 	}
 
-	public Ouvrage[] getExemplaires() {
+	public Exemplaire[] getExemplaires() {
 		return exemplaires;
 	}
 
 	public int getNbExemplaires() {
 		return nbExemplaires;
+	}
+
+	public void ajouteExemplaire(Exemplaire exemplaire) {
+		if (nbExemplaires >= 50) {
+			System.out.println("trop d'exemplaires");
+			return;
+		}
+
+		exemplaires[nbExemplaires] = exemplaire;
+		nbExemplaires++;
 	}
 
 }
