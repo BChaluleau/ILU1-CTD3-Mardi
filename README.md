@@ -5,3 +5,8 @@ TD Bibliothèque
 ## 1
 - initialisation du projet
 
+## 2 
+- instancier Bibliotheque, Ouvrage, Exemplaire
+- instancier les tableaux d'ouvrages dans la bibli
+- instancier les tableaux d'exemplaires dans Ouvrage
+- créer un scénario
