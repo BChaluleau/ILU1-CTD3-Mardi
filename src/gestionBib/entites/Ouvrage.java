@@ -47,14 +47,16 @@ public class Ouvrage {
 		return nbExemplaires;
 	}
 
-	public void ajouteExemplaire(Exemplaire exemplaire) {
+	public Exemplaire ajouteExemplaire(String cote) {
 		if (nbExemplaires >= 50) {
 			System.out.println("trop d'exemplaires");
-			return;
+			return null;
 		}
 
+		Exemplaire exemplaire = new Exemplaire(cote);
 		exemplaires[nbExemplaires] = exemplaire;
 		nbExemplaires++;
+		return exemplaire;
 	}
 
 	@Override

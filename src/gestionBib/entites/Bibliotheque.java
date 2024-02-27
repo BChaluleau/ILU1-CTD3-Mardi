@@ -23,14 +23,16 @@ public class Bibliotheque {
 		return nbOuvrages;
 	}
 
-	public void ajouteOuvrage(Ouvrage ouvrage) {
+	public Ouvrage ajouteOuvrage(String titre, String auteurs, String editeur, int annee, String isbn) {
 		if (nbOuvrages >= nbMaxOuvrages) {
 			System.out.println("Bibli pleine");
-			return;
+			return null;
 		}
 
+		Ouvrage ouvrage = new Ouvrage(titre, auteurs, editeur, annee, isbn);
 		fond[nbOuvrages] = ouvrage;
 		nbOuvrages++;
+		return ouvrage;
 	}
 
 	@Override
