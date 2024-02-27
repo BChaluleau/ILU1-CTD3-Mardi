@@ -10,3 +10,6 @@ TD Bibliothèque
 - instancier les tableaux d'ouvrages dans la bibli
 - instancier les tableaux d'exemplaires dans Ouvrage
 - créer un scénario
+
+## 3 
+- ajout des get/set
