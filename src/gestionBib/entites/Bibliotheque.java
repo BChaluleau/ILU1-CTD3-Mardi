@@ -11,4 +11,16 @@ public class Bibliotheque {
 		this.fond = new Ouvrage[nbMaxOuvrages];
 	}
 
+	public Ouvrage[] getFond() {
+		return fond;
+	}
+
+	public int getNbMaxOuvrages() {
+		return nbMaxOuvrages;
+	}
+
+	public int getNbOuvrages() {
+		return nbOuvrages;
+	}
+
 }

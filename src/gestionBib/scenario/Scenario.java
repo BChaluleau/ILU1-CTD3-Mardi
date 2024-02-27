@@ -11,6 +11,9 @@ public class Scenario {
 		Bibliotheque bibli = new Bibliotheque(10);
 		Ouvrage ouvrage1 = new Ouvrage("Titre", "Auteurs", "Editeur", 2024, "ISBN");
 		Exemplaire exemplaire = new Exemplaire("COTE");
+
+		System.out.println(exemplaire.getCote());
+
 		System.out.println("...fin");
 
 	}

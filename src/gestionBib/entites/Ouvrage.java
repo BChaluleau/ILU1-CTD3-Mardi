@@ -19,4 +19,32 @@ public class Ouvrage {
 		this.isbn = isbn;
 	}
 
+	public String getTitre() {
+		return titre;
+	}
+
+	public String getAuteurs() {
+		return auteurs;
+	}
+
+	public String getEditeur() {
+		return editeur;
+	}
+
+	public int getAnnee() {
+		return annee;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public Ouvrage[] getExemplaires() {
+		return exemplaires;
+	}
+
+	public int getNbExemplaires() {
+		return nbExemplaires;
+	}
+
 }
