@@ -33,4 +33,16 @@ public class Bibliotheque {
 		nbOuvrages++;
 	}
 
+	@Override
+	public String toString() {
+		String tos = "Bibliotheque [nbMaxOuvrages=" + nbMaxOuvrages + ", nbOuvrages=" + nbOuvrages + "]";
+		for (Ouvrage ouvrage : fond) {
+			if (ouvrage != null) {
+				tos = tos + "\n\t" + ouvrage.toString();
+			}
+		}
+
+		return tos;
+	}
+
 }

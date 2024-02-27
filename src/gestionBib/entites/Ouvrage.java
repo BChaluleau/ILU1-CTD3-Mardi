@@ -57,4 +57,18 @@ public class Ouvrage {
 		nbExemplaires++;
 	}
 
+	@Override
+	public String toString() {
+		String tos = "Ouvrage [titre=" + titre + ", auteurs=" + auteurs + ", editeur=" + editeur + ", annee=" + annee
+				+ ", isbn=" + isbn + ", nbExemplaires=" + nbExemplaires + "]";
+		for (Exemplaire exemplaire : exemplaires) {
+			if (exemplaire != null) {
+				tos = tos + "\t" + exemplaire.getCote();
+			}
+
+		}
+
+		return tos;
+	}
+
 }
